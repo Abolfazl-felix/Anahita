@@ -19,7 +19,6 @@ elif days == 0:
     text = "🎉🎂 امروز تولد آناهیتاست ❤️"
 else:
     text = "🎂 تولد آناهیتا گذشته ❤️"
-
 async def main():
     bot = Bot(TOKEN)
     await bot.send_message(chat_id=CHAT_ID, text=text)
