@@ -12,6 +12,16 @@ birthday = JalaliDate(1405, 9, 30).to_gregorian()
 today = date.today()
 
 days = (birthday - today).days
+normal_messages = [
+    "🌸 تا تولد آناهیتا {days} روز باقی مونده 💖",
+    "✨ فقط {days} روز تا روز قشنگت مونده 🤍",
+    "🎂 شمارش معکوس ادامه داره... {days} روز باقی مونده ❤️",
+    "🌷 هر روز داریم به تولدت نزدیک‌تر می‌شیم... {days} روز مونده 🫶",
+    "💝 فقط {days} روز دیگه تا لبخندهای روز تولدت 🎉",
+    "🌙 امروز هم یه روز کمتر شد... {days} روز باقی مونده 🤍",
+    "🎈 هنوز {days} روز مونده، ولی هیجانش از الان شروع شده 💕",
+    "☀️ روزهای باقی‌مونده: {days} 🌸",
+]
 if days > 100:
  text = random.choice(normal_messages).format(days=days)
 
