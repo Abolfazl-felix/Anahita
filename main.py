@@ -6,7 +6,10 @@ import asyncio
 import os
 
 TOKEN = os.environ["BOT_TOKEN"]
-CHAT_ID = -1004297391995
+CHAT_IDS = [
+    -1004297391995,
+    -1002966097451
+]
 
 # تولد: ۳۰ آذر ۱۴۰۵
 birthday = JalaliDate(1405, 9, 30).to_gregorian()
