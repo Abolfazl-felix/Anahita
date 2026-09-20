@@ -13,19 +13,19 @@ today = date.today()
 
 days = (birthday - today).days
 if days > 100:
-    text = f"🎂 تا تولد آناهیتا {days} روز باقی مانده ❤️"
+ text = random.choice(normal_messages).format(days=days)
 
 elif days == 100:
     text = "💯 فقط 100 روز تا تولد آناهیتا مونده 🎉"
 
 elif days > 50:
-    text = f"🎂 تا تولد آناهیتا {days} روز باقی مانده ❤️"
+    text = random.choice(normal_messages).format(days=days)
 
 elif days == 50:
     text = "🌸 فقط 50 روز مونده تا روز قشنگت 💖"
 
 elif days > 30:
-    text = f"🎂 تا تولد آناهیتا {days} روز باقی مانده ❤️"
+    text = random.choice(normal_messages).format(days=days)
 
 elif days == 30:
     text = """✨ فقط 30 روز مونده
@@ -33,19 +33,19 @@ elif days == 30:
 کم‌کم داریم به روز قشنگت نزدیک می‌شیم 🌷"""
 
 elif days > 14:
-    text = f"🎂 تا تولد آناهیتا {days} روز باقی مانده ❤️"
+    text = random.choice(normal_messages).format(days=days)
 
 elif days == 14:
     text = "💖 فقط دو هفته تا تولدت مونده ✨"
 
 elif days > 7:
-    text = f"🎂 تا تولد آناهیتا {days} روز باقی مانده ❤️"
+    text = random.choice(normal_messages).format(days=days)
 
 elif days == 7:
     text = "🎈 فقط یک هفته تا تولدت مونده ❤️"
 
-elif days > 3:
-    text = f"🎂 تا تولد آناهیتا {days} روز باقی مانده ❤️"
+elif days > 3:  
+     text = random.choice(normal_messages).format(days=days)
 
 elif days == 3:
     text = "🎁 فقط 3 روز دیگه تا تولدت مونده 🥳"
