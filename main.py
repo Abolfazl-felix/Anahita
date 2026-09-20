@@ -56,67 +56,67 @@ PEOPLE = [
     ]
 }
 ]
-
 def build_text(person):
     birthday = person["birthday"]
     today = date.today()
 
     days = (birthday - today).days
     normal_messages = person["messages"]
+    name = person["name"]
 
     if days > 100:
         text = random.choice(normal_messages).format(days=days)
 
     elif days == 100:
-        text = "💯 فقط 100 روز تا تولد آناهیتا مونده 🎉"
+        text = f"💯 فقط 100 روز تا تولد {name} مونده 🎉"
 
     elif days > 50:
         text = random.choice(normal_messages).format(days=days)
 
     elif days == 50:
-        text = "🌸 فقط 50 روز مونده تا روز قشنگت 💖"
+        text = f"🌸 فقط 50 روز مونده تا روز قشنگ {name} 💖"
 
     elif days > 30:
         text = random.choice(normal_messages).format(days=days)
 
     elif days == 30:
-        text = """✨ فقط 30 روز مونده
+        text = f"""✨ فقط 30 روز مونده
 
-کم‌کم داریم به روز قشنگت نزدیک می‌شیم 🌷"""
+کم‌کم داریم به روز قشنگ {name} نزدیک می‌شیم 🌷"""
 
     elif days > 14:
         text = random.choice(normal_messages).format(days=days)
 
     elif days == 14:
-        text = "💖 فقط دو هفته تا تولدت مونده ✨"
+        text = f"💖 فقط دو هفته تا تولد {name} مونده ✨"
 
     elif days > 7:
         text = random.choice(normal_messages).format(days=days)
 
     elif days == 7:
-        text = "🎈 فقط یک هفته تا تولدت مونده ❤️"
+        text = f"🎈 فقط یک هفته تا تولد {name} مونده ❤️"
 
     elif days > 3:
         text = random.choice(normal_messages).format(days=days)
 
     elif days == 3:
-        text = "🎁 فقط 3 روز دیگه تا تولدت مونده 🥳"
+        text = f"🎁 فقط 3 روز دیگه تا تولد {name} مونده 🥳"
 
     elif days == 2:
-        text = "💕 فقط 2 روز مونده... 🤍"
+        text = f"💕 فقط 2 روز تا تولد {name} مونده 🤍"
 
     elif days == 1:
-        text = """🌙 فردا تولدته...
+        text = f"""🌙 فردا تولد {name} است...
 
 امیدوارم فردا یکی از قشنگ‌ترین روزهای زندگیت باشه 🤍✨"""
 
     elif days == 0:
-        text = """🎉🎂 تولدت مبارک خوشگل خانم 💖
+        text = f"""🎉🎂 تولدت مبارک {name} 💖
 
-امیدوارم امسال یه سال پر از سلامتی، شادی، آرامش و کلی لبخندهای قشنگت باشه 🌸✨
+امیدوارم امسال یه سال پر از سلامتی، شادی، آرامش و کلی لبخندهای قشنگ برات باشه 🌸✨
 امیدوارم به همه آرزوهای قشنگت برسی و هر روزت از روز قبل بهتر و روشن‌تر باشه 🤍🌷
 
-دوست دارم همیشه گیت پر از لبخند باشه و هیچ‌وقت غم مهمون دلت نشه 🌹🫶
+دوست دارم همیشه دلت پر از لبخند باشه و هیچ‌وقت غم مهمون دلت نشه 🌹🫶
 
 با آرزوی بهترین‌ها برات
 از طرف دوستدار همیشگیت و کادو دهنده دفتر رنگ‌آمیزی 🎨📖💝
@@ -124,7 +124,7 @@ def build_text(person):
 تولدت هزاران بار مبارک 🎁🎈🎂"""
 
     else:
-        text = "🎂 تولد امسال گذشت، حالا منتظر سال بعد می‌مونیم ❤️"
+        text = f"🎂 تولد {name} امسال گذشت، حالا منتظر سال بعد می‌مونیم ❤️"
 
     return text
 
