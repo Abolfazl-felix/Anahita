@@ -63,6 +63,14 @@ def build_text(person):
     days = (birthday - today).days
     normal_messages = person["messages"]
     name = person["name"]
+symbol = person["theme"]["symbol"]
+flower = person["theme"]["flower"]
+
+header = f"""━━━━━━━━━━━━
+{symbol} {name} {flower}
+━━━━━━━━━━━━
+
+"""
 
     if days > 100:
         text = random.choice(normal_messages).format(days=days)
