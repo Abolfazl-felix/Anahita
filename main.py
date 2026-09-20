@@ -13,7 +13,7 @@ today = date.today()
 
 days = (birthday - today).days
 
-if days = 0:
+if days >= 0:
     text = f"🎂❤️ تا تولد آناهیتا {days} روز مونده 🎉"
 elif days >= 0:
     text = """🎉🎂 تولدت مبارک خوشگل خانم 💖
