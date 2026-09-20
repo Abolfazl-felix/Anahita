@@ -90,6 +90,7 @@ else:
 
 async def main():
     bot = Bot(TOKEN)
-    await bot.send_message(chat_id=CHAT_ID, text=text)
+    for chat_id in CHAT_IDS:
+    await bot.send_message(chat_id=chat_id, text=text)
 
 asyncio.run(main())
