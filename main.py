@@ -12,9 +12,9 @@ birthday = JalaliDate(1405, 9, 30).to_gregorian()
 today = date.today()
 
 days = (birthday - today).days
-if False:
-    text = f"..."
-elif days >= 0:
+if days > 0:
+    text = f"🎂❤️ تا تولد آناهیتا {days} روز مونده 🎉"
+elif days == 0:
     text = """🎉🎂 تولدت مبارک خوشگل خانم 💖
 
 امیدوارم امسال یه سال پر از سلامتی، شادی، آرامش و کلی لبخندهای قشنگ برات باشه 🌸✨
