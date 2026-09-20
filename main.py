@@ -7,34 +7,32 @@ import os
 
 TOKEN = os.environ["BOT_TOKEN"]
 
-PEOPLE = [
-    {
-        "name": "آناهیتا",
-         person = PEOPLE[0]
+person = {
+    "name": "آناهیتا",
+    "birthday": JalaliDate(1405, 9, 30).to_gregorian(),
+    "chat_ids": [
+        -1004297391995,
+        -1002966097451
+    ],
+    "messages": [
+        "🌸 تا تولد آناهیتا {days} روز باقی مونده 💖",
+        "✨ فقط {days} روز تا روز قشنگت مونده 🤍",
+        "🎂 شمارش معکوس ادامه داره... {days} روز باقی مونده ❤️",
+        "🌷 هر روز داریم به تولدت نزدیک‌تر می‌شیم... {days} روز مونده 🫶",
+        "💝 فقط {days} روز دیگه تا لبخندهای روز تولدت 🎉",
+        "🌙 امروز هم یه روز کمتر شد... {days} روز باقی مونده 🤍",
+        "🎈 هنوز {days} روز مونده، ولی هیجانش از الان شروع شده 💕",
+        "☀️ روزهای باقی‌مونده: {days} 🌸",
+    ]
+}
+# تولد: ۳۰ آذر ۱۴۰۵
 
 birthday = person["birthday"]
 today = date.today()
 
 days = (birthday - today).days
-
 normal_messages = person["messages"]
-    }
-]
-# تولد: ۳۰ آذر ۱۴۰۵
-birthday = JalaliDate(1405, 9, 30).to_gregorian()
-today = date.today()
 
-days = (birthday - today).days
-normal_messages = [
-    "🌸 تا تولد آناهیتا {days} روز باقی مونده 💖",
-    "✨ فقط {days} روز تا روز قشنگت مونده 🤍",
-    "🎂 شمارش معکوس ادامه داره... {days} روز باقی مونده ❤️",
-    "🌷 هر روز داریم به تولدت نزدیک‌تر می‌شیم... {days} روز مونده 🫶",
-    "💝 فقط {days} روز دیگه تا لبخندهای روز تولدت 🎉",
-    "🌙 امروز هم یه روز کمتر شد... {days} روز باقی مونده 🤍",
-    "🎈 هنوز {days} روز مونده، ولی هیجانش از الان شروع شده 💕",
-    "☀️ روزهای باقی‌مونده: {days} 🌸",
-]
 if days > 100:
  text = random.choice(normal_messages).format(days=days)
 
@@ -66,7 +64,7 @@ elif days > 7:
 
 elif days == 7:
     text = "🎈 فقط یک هفته تا تولدت مونده ❤️"
-
+،
 elif days > 3:  
      text = random.choice(normal_messages).format(days=days)
 
