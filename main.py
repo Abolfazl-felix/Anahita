@@ -64,7 +64,7 @@ elif days > 7:
 
 elif days == 7:
     text = "🎈 فقط یک هفته تا تولدت مونده ❤️"
-،
+
 elif days > 3:  
      text = random.choice(normal_messages).format(days=days)
 
