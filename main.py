@@ -13,7 +13,7 @@ PEOPLE = [
         "birthday": JalaliDate(1405, 9, 30).to_gregorian(),
         "chat_ids": [
             -1004297391995,
-            -1002966097451
+            -1004356259615
         ],
         "theme": {
             "emoji": "🌙💜🌺",
