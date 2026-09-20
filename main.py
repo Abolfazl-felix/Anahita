@@ -8,7 +8,7 @@ import os
 TOKEN = os.environ["BOT_TOKEN"]
 CHAT_IDS = [
     -1004297391995,
-    -1002966097451
+    -1004356259615
 ]
 
 # تولد: ۳۰ آذر ۱۴۰۵
