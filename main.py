@@ -32,7 +32,7 @@ PEOPLE = [
             "☀️ روزهای باقی‌مونده: {days} 🌸",
         ]
     }
-{
+,{
     "name": "مائده",
     "birthday": JalaliDate(1405, 7, 23).to_gregorian(),
     "chat_ids": [
