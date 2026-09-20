@@ -10,27 +10,14 @@ TOKEN = os.environ["BOT_TOKEN"]
 PEOPLE = [
     {
         "name": "آناهیتا",
-        "birthday": JalaliDate(1405, 9, 30).to_gregorian(),
-        "chat_ids": [
-            -1004297391995,
-            -1002966097451
-        ],
-        "theme": {
-            "emoji": "🌙💜🌺",
-            "symbol": "🌙",
-            "flower": "🌺",
-            "style": "moon"
-        },
-        "messages": [
-            "🌸 تا تولد آناهیتا {days} روز باقی مونده 💖",
-            "✨ فقط {days} روز تا روز قشنگت مونده 🤍",
-            "🎂 شمارش معکوس ادامه داره... {days} روز باقی مونده ❤️",
-            "🌷 هر روز داریم به تولدت نزدیک‌تر می‌شیم... {days} روز مونده 🫶",
-            "💝 فقط {days} روز دیگه تا لبخندهای روز تولدت 🎉",
-            "🌙 امروز هم یه روز کمتر شد... {days} روز باقی مونده 🤍",
-            "🎈 هنوز {days} روز مونده، ولی هیجانش از الان شروع شده 💕",
-            "☀️ روزهای باقی‌مونده: {days} 🌸",
-        ]
+         person = PEOPLE[0]
+
+birthday = person["birthday"]
+today = date.today()
+
+days = (birthday - today).days
+
+normal_messages = person["messages"]
     }
 ]
 # تولد: ۳۰ آذر ۱۴۰۵
