@@ -108,7 +108,7 @@ PEOPLE = [
     "birthday": JalaliDate(1405, 3, 17).to_gregorian(),
 
     "chat_ids": [
-        -1004356259615
+        -1004356259615,
         -1002966097451
     ],
 
@@ -128,7 +128,7 @@ PEOPLE = [
     "birthday": JalaliDate(1405, 3, 21).to_gregorian(),
 
     "chat_ids": [
-        -1004356259615
+        -1004356259615,
         -1002966097451
     ],
 
