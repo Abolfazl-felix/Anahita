@@ -11,10 +11,16 @@ TOKEN = os.environ["BOT_TOKEN"]
 
 
 def build_text(person):
-    birthday = person["birthday"]
     today = date.today()
 
-    days = (birthday - today).days
+birthday = person["birthday"]
+
+birthday = birthday.replace(year=today.year)
+
+if birthday < today:
+    birthday = birthday.replace(year=today.year + 1)
+
+days = (birthday - today).days
 
     name = person["name"]
     symbol = person["theme"]["symbol"]
