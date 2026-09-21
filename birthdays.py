@@ -99,5 +99,18 @@ PEOPLE = [
     },
 
     "birthday_message": """بعداً متن تبریک تولد ثنا اینجا قرار می‌گیرد."""
-}
+},
+{
+    "name": "زهرا",
+    "birthday": JalaliDate(1405, 3, 17).to_gregorian(),
+    "chat_ids": [
+        -1000000000000  # Chat ID را اینجا جایگزین کن
+    ],
+    "theme": {
+        "emoji": "🕊️🤍🌸",
+        "symbol": "🕊️",
+        "flower": "🌸",
+        "style": "blossom"
+    }
+},
 ]
