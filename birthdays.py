@@ -102,15 +102,40 @@ PEOPLE = [
 },
 {
     "name": "زهرا",
+    "message_type": "zahra",
+
     "birthday": JalaliDate(1405, 3, 17).to_gregorian(),
+
     "chat_ids": [
         -1000000000000  # Chat ID را اینجا جایگزین کن
     ],
+
     "theme": {
         "emoji": "🕊️🤍🌸",
         "symbol": "🕊️",
         "flower": "🌸",
         "style": "blossom"
-    }
+    },
+
+    "birthday_message": """بعداً متن تبریک تولد زهرا اینجا قرار می‌گیرد."""
+},
+{
+    "name": "حدیث",
+    "message_type": "hadis",
+
+    "birthday": JalaliDate(1405, 3, 21).to_gregorian(),
+
+    "chat_ids": [
+        -1000000000000  # Chat ID را اینجا جایگزین کن
+    ],
+
+    "theme": {
+        "emoji": "🦋💜💐",
+        "symbol": "🦋",
+        "flower": "💐",
+        "style": "butterfly"
+    },
+
+    "birthday_message": """بعداً متن تبریک تولد حدیث اینجا قرار می‌گیرد."""
 },
 ]
