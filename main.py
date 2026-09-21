@@ -81,10 +81,7 @@ days = (birthday - today).days
 امیدوارم فردا یکی از قشنگ‌ترین روزهای زندگیت باشه 🤍✨"""
 
     elif days == 0:
-        text = person["birthday_message"]
-
-    else:
-        text = f"🎂 تولد {name} امسال گذشت، حالا منتظر سال بعد می‌مونیم ❤️"
+    text = person["birthday_message"]
 
     return header + text
 
