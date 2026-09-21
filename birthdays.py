@@ -56,5 +56,44 @@ PEOPLE = [
 متن تبریک مخصوص مائده را بعداً اینجا بنویس.
 
 """
-    }
+    },
+{
+    "name": "فاطیما",
+    "message_type": "fatima",
+
+    "birthday": JalaliDate(1405, 7, 7).to_gregorian(),
+
+    "chat_ids": [
+        # Chat ID ها را اینجا قرار بده
+    ],
+
+    "theme": {
+        "emoji": "🌸🐾🧠",
+        "symbol": "🌸",
+        "flower": "🌷",
+        "style": "nature"
+    },
+
+    "birthday_message": """بعداً متن تبریک تولد فاطیما اینجا قرار می‌گیرد."""
+},
+
+{
+    "name": "ثنا",
+    "message_type": "sana",
+
+    "birthday": JalaliDate(1405, 11, 17).to_gregorian(),
+
+    "chat_ids": [
+        # Chat ID ها را اینجا قرار بده
+    ],
+
+    "theme": {
+        "emoji": "🎨🎤🌼",
+        "symbol": "🎨",
+        "flower": "🌼",
+        "style": "artist"
+    },
+
+    "birthday_message": """بعداً متن تبریک تولد ثنا اینجا قرار می‌گیرد."""
+}
 ]
