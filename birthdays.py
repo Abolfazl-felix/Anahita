@@ -10,7 +10,7 @@ PEOPLE = [
         "chat_ids": [
             -1004297391995,
             -1004356259615,
-            -1002966097451
+          
         ],
 
         "theme": {
@@ -40,8 +40,8 @@ PEOPLE = [
         "birthday": JalaliDate(1405, 7, 23).to_gregorian(),
 
         "chat_ids": [
-            -1004356259615,
-            -1002966097451
+            -1004356259615
+            
         ],
 
         "theme": {
@@ -64,7 +64,7 @@ PEOPLE = [
     "birthday": JalaliDate(1405, 7, 7).to_gregorian(),
 
     "chat_ids": [
-        # Chat ID ها را اینجا قرار بده
+        -1004356259615
     ],
 
     "theme": {
@@ -84,7 +84,7 @@ PEOPLE = [
     "birthday": JalaliDate(1405, 11, 17).to_gregorian(),
 
     "chat_ids": [
-        # Chat ID ها را اینجا قرار بده
+        -1004356259615
     ],
 
     "theme": {
