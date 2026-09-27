@@ -6,7 +6,8 @@ import os
 
 from birthdays import PEOPLE
 from messages import MESSAGES
-
+from events import EVENTS
+from event_messages import EVENT_MESSAGES
 TOKEN = os.environ["BOT_TOKEN"]
 
 
