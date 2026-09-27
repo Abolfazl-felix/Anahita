@@ -1,4 +1,5 @@
 from telegram import Bot
+from telegram.error import TimedOut
 from datetime import date
 import random
 import asyncio
@@ -126,10 +127,13 @@ async def main():
         text = build_text(person)
 
         for chat_id in person["chat_ids"]:
-            await bot.send_message(
-                chat_id=chat_id,
-                text=text
-            )
+            try:
+                await bot.send_message(
+                    chat_id=chat_id,
+                    text=text
+                )
+            except TimedOut:
+                print(f"Timeout sending birthday message to {chat_id}")
 
     # مناسبت‌ها
     event_text = get_event_text()
@@ -137,10 +141,13 @@ async def main():
     if event_text:
         for event in EVENTS:
             for chat_id in event["chat_ids"]:
-                await bot.send_message(
-                    chat_id=chat_id,
-                    text=event_text
-                )
+                try:
+                    await bot.send_message(
+                        chat_id=chat_id,
+                        text=event_text
+                    )
+                except TimedOut:
+                    print(f"Timeout sending event message to {chat_id}")
 
 
 if __name__ == "__main__":
