@@ -3,7 +3,8 @@ from persiantools.jdatetime import JalaliDate
 EVENTS = [
     {
         "name": "روز جهانی دختر",
-        "date": JalaliDate(1405, 7, 19),
+        "month": 7,
+        "day": 19,
         "message_type": "international_girls_day",
         "chat_ids": [
             -1004297391995,
@@ -14,7 +15,8 @@ EVENTS = [
 
     {
         "name": "روز دختر",
-        "date": JalaliDate(1406, 1, 19),
+        "month": 1,
+        "day": 19,
         "message_type": "girls_day",
         "chat_ids": [
             -1004297391995,
