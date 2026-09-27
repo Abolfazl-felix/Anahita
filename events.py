@@ -1,9 +1,7 @@
-from persiantools.jdatetime import JalaliDate
-
 EVENTS = [
     {
         "name": "روز دختر",
-        "date": JalaliDate(1406, 2, 9),
+        "date": JalaliDate(1405, 7, 6),
         "emoji": "🌸",
         "message_type": "girls_day",
     },
