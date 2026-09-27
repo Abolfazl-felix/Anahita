@@ -132,16 +132,14 @@ async def main():
             )
 
     # مناسبت‌ها
-    event_text = get_event_text()
-
     if event_text:
-        for person in PEOPLE:
-            for chat_id in person["chat_ids"]:
+    for event in EVENTS:
+        if event_text:
+            for chat_id in event["chat_ids"]:
                 await bot.send_message(
                     chat_id=chat_id,
                     text=event_text
                 )
-
 
 if __name__ == "__main__":
     asyncio.run(main())
