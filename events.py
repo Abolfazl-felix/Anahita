@@ -1,3 +1,5 @@
+from persiantools.jdatetime import JalaliDate
+
 EVENTS = [
     {
         "name": "روز دختر",
