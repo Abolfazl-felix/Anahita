@@ -65,7 +65,7 @@ PEOPLE = [
     "name": "فاطیما",
     "message_type": "fatima",
 
-    "birthday": JalaliDate(1405, 7, 7).to_gregorian(),
+    "birthday": JalaliDate(1405, 7, 6).to_gregorian(),
 
     "chat_ids": [
         -1004356259615,
