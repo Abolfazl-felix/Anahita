@@ -5,7 +5,7 @@ PEOPLE = [
         "name": "آناهیتا",
         "message_type": "anahita",
 
-        "birthday": JalaliDate(1405, 9, 30).to_gregorian(),
+        "birthday": JalaliDate(1405, 9, 29).to_gregorian(),
 
         "chat_ids": [
             -1004297391995,
@@ -40,7 +40,7 @@ PEOPLE = [
         "name": "مائده",
         "message_type": "maedeh",
 
-        "birthday": JalaliDate(1405, 7, 23).to_gregorian(),
+        "birthday": JalaliDate(1405, 7, 22).to_gregorian(),
 
         "chat_ids": [
             -1004356259615,
@@ -94,7 +94,7 @@ PEOPLE = [
     "name": "ثنا",
     "message_type": "sana",
 
-    "birthday": JalaliDate(1405, 11, 17).to_gregorian(),
+    "birthday": JalaliDate(1405, 11, 16).to_gregorian(),
 
     "chat_ids": [
         -1004356259615,
@@ -114,7 +114,7 @@ PEOPLE = [
     "name": "زهرا",
     "message_type": "zahra",
 
-    "birthday": JalaliDate(1405, 3, 17).to_gregorian(),
+    "birthday": JalaliDate(1405, 3, 16).to_gregorian(),
 
     "chat_ids": [
         -1004356259615,
@@ -134,7 +134,7 @@ PEOPLE = [
     "name": "حدیث",
     "message_type": "hadis",
 
-    "birthday": JalaliDate(1405, 3, 21).to_gregorian(),
+    "birthday": JalaliDate(1405, 3, 20).to_gregorian(),
 
     "chat_ids": [
         -1004356259615,
