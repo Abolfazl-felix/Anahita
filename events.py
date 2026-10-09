@@ -4,7 +4,7 @@ EVENTS = [
     {
         "name": "روز جهانی دختر",
         "month": 7,
-        "day": 19,
+        "day": 18,
         "message_type": "international_girls_day",
         "chat_ids": [
             -1004297391995,
